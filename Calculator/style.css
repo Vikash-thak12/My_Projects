@@ -44,3 +44,24 @@ button
     font-weight: bold;
     cursor: pointer;
 }
+
+button:hover 
+{
+    background-color: rgb(54, 71, 71);
+}
+button:active{
+    background-color: rgb(76, 169, 169);
+}
+
+.operator-btn
+{
+    background-color: rgb(206, 146, 33);
+}
+.operator-btn:hover
+{
+    background-color: rgb(121, 110, 89);
+}
+.operator-btn:active 
+{
+    background-color: rgb(251, 163, 1);
+}
