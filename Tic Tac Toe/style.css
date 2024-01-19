@@ -47,4 +47,35 @@ body{
     background-color: black;
     color: white;
     border: none;
+    cursor: pointer;
+}
+
+#newgame_btn
+{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+#msg 
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: indigo;
+    margin-top: 1rem;
+}
+.msg-container
+{
+    height: 50vmin;
+}
+
+.hide 
+{
+    display: none;
 }
