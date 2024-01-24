@@ -5,3 +5,8 @@
     margin: auto;
     overflow: hidden;
 }
+
+.slider img {
+    width: 200px;
+    height: auto;
+}
