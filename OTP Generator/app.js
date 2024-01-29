@@ -7,5 +7,4 @@ function generateotp(length) {
 
 }
 
-let result = new generateotp();
-result(5);
+console.log(generateotp(5));
