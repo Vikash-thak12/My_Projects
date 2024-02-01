@@ -19,6 +19,7 @@ body
     padding: 15px;
     border: 2px solid black;
     border-radius: 10px;
+    background-color: rgb(39, 21, 21);
     color: white;
     font-size: 1rem;
     font-weight: bold;
