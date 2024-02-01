@@ -10,7 +10,7 @@ body
 
 .weatherform
 {
-    margin: 50px;
+    margin: 20px;
 }
 
 .entercity
@@ -23,7 +23,7 @@ body
     font-size: 1rem;
     font-weight: bold;
     border: none;
-    margin: 20px;
+    margin: 10px;
 
 }
 
@@ -45,3 +45,39 @@ body
     color: aqua;
 }
 
+.card
+{
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 30px;
+    box-shadow: 2px 2px 5px rgb(35, 9, 9);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+}
+
+h1
+{
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+p
+{
+    font-size: 1.5 rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.displayemoji
+{
+    font-size: 7rem;
+}
+
+.displaytemp, .displayhumidity, .displaymsg, .displayerror
+{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
