@@ -1,0 +1,47 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 65%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherform
+{
+    margin: 50px;
+}
+
+.entercity
+{
+    width: 200px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    margin: 20px;
+
+}
+
+.btn
+{
+    width: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover
+{
+    background-color: blue;
+    color: aqua;
+}
+
