@@ -11,7 +11,7 @@ weatherform.addEventListener("submit", async event => {
     if (city) {
         try {
             const weatherdata = await getWeatherData(city);
-            displayinfo(data);
+            displayinfo(weatherdata);
         }
         catch(error) {
             console.error(error);
@@ -25,14 +25,56 @@ weatherform.addEventListener("submit", async event => {
 
 async function getWeatherData(city) {
 
-    const apiURL = `https://api.openweathermap.org/data/2.5/weather?${city}&appid=${API}`;
+    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`;
     const response = await fetch(apiURL);
 
     console.log(response);
-}
+
+    if(!response.ok)
+    {
+        throw new Error("Could not fetch the weather")
+    }
+
+    return await response.json();
+}   
 
 function displayinfo(data) {
 
+    console.log(data);
+    const { name: city,
+        main: { temp, humidity },
+        weather: [{ description, id }] } = data;
+
+    card.textContent = "";
+    card.style.display = "flex";
+
+    const displaycity = document.createElement("h1");
+    const displaytemp = document.createElement("p");
+    const displayhumidity = document.createElement("p");
+    const displaymsg = document.createElement("p");
+    const displayemoji = document.createElement("p");
+    const displayerror = document.createElement("p");
+
+
+    displaycity.textContent = city;
+    displaytemp.textContent = `${Math.round(temp - 273)}°C`;
+    displayhumidity.textContent = `Humidity: ${humidity}%`; 
+    displaymsg.textContent = description;
+    displayemoji.textContent = getWeatherEmoji(id);
+    
+
+    displaycity.classList.add("displaycity");
+    displaytemp.classList.add("displaytemp");
+    displayhumidity.classList.add("displayhumidity");
+    displaymsg.classList.add("displaymsg");
+    displayemoji.classList.add("displayemoji");
+
+
+    card.appendChild(displaycity);
+    card.appendChild(displaytemp);
+    card.appendChild(displayhumidity);
+    card.appendChild(displaymsg);
+    card.appendChild(displayemoji);
 }
 
 function getWeatherEmoji(weatherId) {

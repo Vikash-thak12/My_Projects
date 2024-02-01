@@ -28,7 +28,7 @@ body
 
 }
 
-.btn
+.btn[type = "submit"]
 {
     width: auto;
     padding: 10px;
