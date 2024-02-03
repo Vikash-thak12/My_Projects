@@ -4,6 +4,16 @@ const BASE_URL =
 
 
 const dropdowns = document.querySelectorAll(".dropdown select");
+const btn = document.querySelector(".btn");
+const fromCurr = document.querySelector(".from select");
+const toCurr = document.querySelector(".To select");
+const msg = document.querySelector(".msg");
+
+
+window.addEventListener("load", () => {
+    updateExchangeRate();
+})
+
 
 for (let select of dropdowns) {
     for (let currCode in countryList) {
@@ -31,4 +41,30 @@ const updateFlag = (element) =>
     let newSrc = `https://flagsapi.com/${countrycode}/flat/64.png`;
     let img = element.parentElement.querySelector("img");
     img.src = newSrc;
+}
+
+btn.addEventListener("click" , (event) => {
+    event.preventDefault();
+    updateExchangeRate();
+   
+})
+
+const updateExchangeRate = async () => {
+    let amount = document.querySelector(".amount input");
+    let amtVal = amount.value;
+    if(amtVal == "" || amtVal < 1) {
+        amtVal = 1;
+        amount.value = "1";
+    }
+
+    // console.log(fromCurr.value, toCurr.value);
+    const url = `${BASE_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+    let response = await fetch(url);
+    let data = await response.json();
+    let rate = data[toCurr.value.toLowerCase()];
+
+    let finalAmount = rate * amtVal;
+    // console.log(finalAmount);
+
+    msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`
 }
