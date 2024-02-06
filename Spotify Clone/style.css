@@ -1,6 +1,5 @@
-body{
-    /* background-color: black;
-    color: white; */
+body {
+
 }
 .container {
     display: flex;
@@ -12,4 +11,16 @@ body{
 }
 .right {
     width: 75%;
+}
+
+.logo
+{
+    padding: 0.5rem 0 0 0.5rem ;
+}
+
+.home ul li 
+{
+    width: 30px;
+    list-style: none;
+    padding: 4px;
 }
