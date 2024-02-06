@@ -1,5 +1,7 @@
-body {
-
+*
+{
+    margin: 0;
+    padding: 0;
 }
 .container {
     display: flex;
@@ -15,12 +17,17 @@ body {
 
 .logo
 {
+    width: 3rem;
     padding: 0.5rem 0 0 0.5rem ;
 }
 
 .home ul li 
 {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+    gap: 15px;
     width: 30px;
     list-style: none;
-    padding: 4px;
+    cursor: pointer;
 }
