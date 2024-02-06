@@ -24,6 +24,15 @@
 .home 
 {
     padding: 1rem;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.library
+{
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 20px;
 }
 
 .home ul li 

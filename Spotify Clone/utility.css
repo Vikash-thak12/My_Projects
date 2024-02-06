@@ -20,6 +20,10 @@
     background-color: black;
     color: white;
 }
+.grey
+{
+    background-color: #121212;
+}
 
 .invert {
     filter: invert(1);
