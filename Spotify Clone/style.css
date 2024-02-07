@@ -31,11 +31,6 @@
     border-radius: 20px;
 }
 
-.library {
-    margin: 5px;
-    border: 2px solid white;
-    border-radius: 20px;
-}
 
 .home ul li {
     display: flex;
@@ -45,4 +40,45 @@
     width: 25px;
     list-style: none;
     cursor: pointer;
+    font-weight: bold;
+}
+.heading
+{
+    display: flex;
+    gap: 10px;
+    margin-left: 8px;
+    align-items: center;
+}
+
+.heading img
+{
+    width: 1.5rem;
+}
+.heading span
+{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.library {
+    min-height: 60vh;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.footer 
+{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer a
+{
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: grey;
 }
