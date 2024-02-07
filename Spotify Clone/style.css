@@ -30,7 +30,7 @@ body{
 .home {
     padding: 1rem;
     margin: 5px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     border-radius: 20px;
 }
 
@@ -67,7 +67,7 @@ body{
     min-height: 70vh;
     margin: 5px;
     padding: 10px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     border-radius: 20px;
 }
 
@@ -111,4 +111,36 @@ body{
 .globe:hover
 {
     border: 2px solid white;
+}
+
+
+/* Right sidebar  */
+
+.header{
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.left-header{
+    width: 80%;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.left-header img  
+{
+    padding: 5px;
+    width: 1.1rem;
+    background-color: #00000007;
+    border-radius: 50%;
+    
+}
+
+.right-header
+{
+    width: 20%;
+    text-align: center;
 }
