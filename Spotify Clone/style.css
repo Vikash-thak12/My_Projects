@@ -1,16 +1,19 @@
-*
-{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
 .container {
     display: flex;
 }
 
-.left
-{
+.left {
     width: 24%;
 }
+
 .right {
     width: 76%;
 }
@@ -21,22 +24,20 @@
     padding: 0.5rem 0 0 0.5rem ;
 } */
 
-.home 
-{
+.home {
     padding: 1rem;
     margin: 5px;
     border: 2px solid white;
     border-radius: 20px;
 }
-.library
-{
+
+.library {
     margin: 5px;
     border: 2px solid white;
     border-radius: 20px;
 }
 
-.home ul li 
-{
+.home ul li {
     display: flex;
     align-items: center;
     margin: 10px 0;
