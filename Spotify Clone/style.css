@@ -5,10 +5,12 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     background-color: black;
     color: white;
 }
+
 .container {
     display: flex;
 }
@@ -21,11 +23,6 @@ body{
     width: 76%;
 }
 
-/* .logo
-{
-    width: 3rem;
-    padding: 0.5rem 0 0 0.5rem ;
-} */
 
 .home {
     padding: 1rem;
@@ -108,15 +105,15 @@ body{
     font-size: .8rem;
     font-weight: bold;
 }
-.globe:hover
-{
+
+.globe:hover {
     border: 2px solid white;
 }
 
 
 /* Right sidebar  */
 
-.header{
+.header {
     margin: 5px;
     padding: 20px;
     display: flex;
@@ -124,23 +121,74 @@ body{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.left-header{
+
+.left-header {
     width: 80%;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
+    padding: 0 5px;
 }
 
-.left-header img  
-{
+.left-header img {
     padding: 5px;
     width: 1.1rem;
     background-color: #00000007;
     border-radius: 50%;
-    
+    fill: grey;
+    margin-right: 10px;
+
 }
 
-.right-header
-{
+
+.btn button {
+    /* text-align: center; */
+    margin-left: 10px;
+    padding: 8px 2px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #00000007;
+    border: none;
+    color: rgb(128, 128, 128);
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+}
+
+.right-header {
     width: 20%;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
+    min-height: auto;
+
+}
+
+.log-btn
+{
+    font-family: cu;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 20px 25px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.log-btn:hover
+{
+    font-weight: bold;
+}
+
+
+.sign-btn{
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    color: gray;
+    font-size: 1rem;
+    cursor: pointer;
+
 }
