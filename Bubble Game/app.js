@@ -1,4 +1,7 @@
-var clutter = "";
+
+//This is the function for making bubble in the second page
+function makeBubble() {
+    var clutter = "";
 for(var i = 1; i<=140; i++)
 {
    var num = Math.floor(Math.random()*10);
@@ -6,3 +9,6 @@ for(var i = 1; i<=140; i++)
 }
 
 document.querySelector("#second").innerHTML = clutter;
+}
+
+makeBubble();
