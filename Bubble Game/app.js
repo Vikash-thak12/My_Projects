@@ -1,4 +1,4 @@
-var timer = 5;
+var timer = 10;
 var score = 0; 
 var rn;
 var mainLog = document.querySelector("#second");
@@ -21,6 +21,8 @@ function runtimer() {
             document.querySelector("#timerval").textContent = timer;
         } else {
             clearInterval(timerint);
+            mainLog.innerHTML = `<h2>Game Over !!! <br> You scored ${score} points!</h2>`;
+            // mainLog.innerHTML = `<h2>You Scored ${increaseScore()}</h2>`;
         }
     },1000);
 }
