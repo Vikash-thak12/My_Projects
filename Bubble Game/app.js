@@ -1,5 +1,5 @@
 var clutter = "";
-for(var i = 1; i<=141; i++)
+for(var i = 1; i<=140; i++)
 {
    clutter +=  `<div class="circle"><span>5</span></div>`;
 }
