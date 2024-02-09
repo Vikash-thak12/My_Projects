@@ -1,6 +1,7 @@
-var timer = 60;
+var timer = 5;
 var score = 0; 
 var rn;
+var mainLog = document.querySelector("#second");
 
 //This is the function for making bubble in the second page
 function makeBubble() {
@@ -28,6 +29,22 @@ function hitscore () {
    rn =  Math.floor(Math.random()*10);
    document.querySelector("#hitscore").textContent = rn;
 }
+
+function increaseScore() {
+    score += 10;
+    document.querySelector("#scoreval").textContent = score;
+}
+
+mainLog.addEventListener("click", (details) => {
+    var num = Number(details.target.textContent);
+    if(num === rn) {
+        increaseScore();
+        makeBubble();
+        hitscore();
+    }
+})
+
+
 
 makeBubble();
 runtimer();
