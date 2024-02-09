@@ -21,14 +21,14 @@ body {
 #main-panel {
     width: 80%;
     height: 80vh;
-    background-color: rgb(136, 123, 123);
+    background-color: white;
     border-radius: 45px;
 }
 
 #top-panel {
     height: 80px;
     width: 100%;
-    background-color: rgb(81, 63, 63);
+    background-color: rgb(216, 173, 173);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -69,18 +69,24 @@ body {
 }
 
 #second {
+    width: 100%;
+    height: calc(100% - 80px);
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    /* border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; */
 }
 
 .circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    margin: 10px;
+    width: 49px;
+    height: 49px;
+    background-color: rgba(35, 5, 5, 0.848);
+    margin: 5px;
     border-radius: 50%;
 }
 
@@ -88,4 +94,9 @@ body {
     color: white;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.circle:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
 }
