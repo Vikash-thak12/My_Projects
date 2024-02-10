@@ -17,10 +17,12 @@ body {
 
 .left {
     width: 24%;
+    height: 100vh;
 }
 
 .right {
     width: 76%;
+    height: 100vh;
     margin: 0 5px;
 }
 
@@ -118,6 +120,7 @@ body {
     margin: 5px;
     padding: 5px 5px;
     display: flex;
+    height: 70px;
     background-color: black;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -218,13 +221,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: baseline;
+    padding: 5px 0;
     gap: 20px;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 70vh;   
 
 }
 .spotifyPlaylists .card
 {
-    width: 185px;
+    width: 180px;
     /* border: 2px solid red; */
     padding: 10px;
     border-radius: 10px;

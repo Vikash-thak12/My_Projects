@@ -28,3 +28,24 @@
 .invert {
     filter: invert(1);
 }
+
+/* WebKit (Safari, Chrome) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333; /* Dark background color */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #666; /* Darker color for the thumb */
+    border-radius: 6px;
+    border: 3px solid #333; /* Dark border */
+}
+
+/* Firefox */
+/* Note: Mozilla Firefox currently does not support scrollbar styling with CSS. */
+
+/* Internet Explorer */
+/* Note: Internet Explorer currently does not support scrollbar styling with CSS. */
