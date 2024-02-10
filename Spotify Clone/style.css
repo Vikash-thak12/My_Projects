@@ -115,7 +115,7 @@ body {
 
 .header {
     margin: 5px;
-    padding: 20px;
+    padding: 15px 0;
     display: flex;
     /* border-radius: 20px; */
     border-top-left-radius: 20px;
