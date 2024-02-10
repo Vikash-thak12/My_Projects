@@ -231,6 +231,7 @@ body {
     /* background-color: #161616; */
     background-color: rgb(72, 46, 46);
     cursor: pointer;
+    position: relative;
 }
 .spotifyPlaylists .card img 
 {
@@ -247,4 +248,12 @@ body {
     color: grey;
     font-size: .9rem;
     overflow: hidden;
+}
+
+.play 
+{
+    position: absolute;
+    bottom: 85px;
+    right: 20px;
+    
 }
