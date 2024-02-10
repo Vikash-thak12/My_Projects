@@ -21,6 +21,7 @@ body {
 
 .right {
     width: 76%;
+    margin: 0 5px;
 }
 
 
@@ -115,9 +116,9 @@ body {
 
 .header {
     margin: 5px;
-    padding: 15px 0;
+    padding: 5px 5px;
     display: flex;
-    /* border-radius: 20px; */
+    background-color: black;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -167,7 +168,7 @@ body {
 .right-header {
     width: 20%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0 10px;
     min-height: auto;
@@ -181,7 +182,7 @@ body {
     border: none;
     color: white;
     font-size: 1rem;
-    padding: 20px 25px;
+    padding: 15px 25px;
     border-radius: 30px;
     background-color: white;
     color: black;
@@ -207,4 +208,41 @@ body {
 .sign-btn:hover 
 {
     color: white;
+}
+
+.spotifyPlaylists
+{
+    padding: 16px;
+}
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.spotifyPlaylists .card
+{
+    width: 185px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #161616;
+    cursor: pointer;
+}
+.spotifyPlaylists .card img 
+{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;    
+}
+
+.card > * {
+    padding-top:5px;
+}
+.card p 
+{
+    color: grey;
+    font-size: .9rem;
 }
