@@ -293,3 +293,28 @@ body {
     width: 30px;
     cursor: pointer;
 }
+
+.songlist 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+}
+.songlist ul {
+    width: 100%;
+}
+
+.songlist ul li 
+{
+    list-style-type: decimal;
+    display: flex;
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+.songlist ul li img 
+{
+    width: 30px;
+    height: 30px;
+}
