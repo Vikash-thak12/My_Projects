@@ -16,29 +16,13 @@ async function getSongs() {
 }
 
 async function main() {
+    let songs = await getSongs();
+    console.log(songs);
 
-    //getting the list of all the songs
-    let songlist = await getSongs();
-    console.log(songlist);
+    //play the first song
+    var audio = new Audio(songs[0]);
+    // audio.play();
 
-    // Play the songs in the array sequentially
-    let index = 0;
-
-    function playNextSong() {
-        if (index < songlist.length) {
-            var audio = new Audio(songlist[index]);
-            audio.addEventListener('ended', function() {
-                index++;
-                playNextSong();
-            });
-            audio.play();
-        }
-    }
-
-    // Wait for user interaction
-    document.addEventListener("click", function() {
-        playNextSong();
-    }, { once: true }); // The event listener will only trigger once
 }
 
 main()
