@@ -270,6 +270,16 @@ body {
 
 .playbar
 {
+    display: flex;
+    align-items: center;
     position: absolute;
     bottom: 0;
+    background-color: aqua;
+    width: 100%;
+    padding: 5px;
+}
+
+.playbar img 
+{
+    width: 49px;
 }
