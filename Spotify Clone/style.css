@@ -279,7 +279,8 @@ body {
     padding: 5px;
 }
 
-.playbar img 
+.buttons img 
 {
-    width: 49px;
+    width: 30px;
+    cursor: pointer;
 }
