@@ -52,6 +52,7 @@ body {
     gap: 10px;
     margin-left: 8px;
     align-items: center;
+    cursor: pointer;
 }
 
 .heading img {
@@ -86,6 +87,12 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: grey;
+    transition: transform .2s ease-in-out;
+}
+.footer a:hover 
+{
+    color: white;
+    transform: scale(1.5    );
 }
 
 .globe {
@@ -147,13 +154,15 @@ body {
 .btn 
 {
     padding: 5px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     
 }
 
 
 .btn button {
-    /* text-align: center; */
-    /* margin-left: 10px; */
     padding: 8px 2px;
     font-size: 16px;
     font-weight: bold;
@@ -161,12 +170,13 @@ body {
     border: none;
     color: rgb(128, 128, 128);
     cursor: pointer;
+    transition: transform .1s ease-in-out;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
 }
 .btn button:hover
 {
     color: white;
-    font-size: 17px;
+    transform: scale(1.1);
 }
 
 .right-header {
@@ -207,10 +217,12 @@ body {
     color: gray;
     font-size: 1rem;
     cursor: pointer;
+    transition: transform .1s ease-in-out;
 
 }
 .sign-btn:hover 
 {
+    transform: scale(1.05);
     color: white;
 }
 
@@ -299,7 +311,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    margin: 10px;
     overflow: auto;
     padding: 10px;
 }
@@ -314,8 +326,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-    font-size: 15px;
+    font-size: 12px;
     gap: 20px;
+    height: 40px;
     border: 1px solid white;
     border-radius: 10px;
     margin: 5px 0;

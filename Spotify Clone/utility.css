@@ -27,6 +27,7 @@
 
 .invert {
     filter: invert(1);
+    cursor: pointer;
 }
 
 /* WebKit (Safari, Chrome) */
