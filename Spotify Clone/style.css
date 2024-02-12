@@ -373,7 +373,19 @@ body {
     bottom: 0;
     border-radius: 25px;
     height: 4px;
-    width: 99%;
-    border: 1px solid white;
-    /* background-color: rgb(164, 138, 138); */
+    width: 98%;
+    /* border: 1px solid white; */
+    background-color: rgb(164, 138, 138);
+}
+
+.circle
+{
+    /* border: 1px solid white; */
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: rgb(67, 56, 56);
+    position: relative;
+    bottom: 4px;
+    left: 0;
 }
