@@ -286,15 +286,15 @@ body {
 .playbar
 {
     position: fixed;
-    bottom: 10px;
+    bottom: 1px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(38, 33, 33);
     width: 72%;
-    height: 40px;
+    height: 60px;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .buttons
@@ -374,6 +374,7 @@ body {
     border-radius: 25px;
     height: 4px;
     width: 98%;
+    margin: 10px;
     /* border: 1px solid white; */
     background-color: rgb(164, 138, 138);
 }
