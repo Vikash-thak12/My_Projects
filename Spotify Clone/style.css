@@ -299,7 +299,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px;
+    height: 400px;
+    overflow: auto;
+    padding: 10px;
 }
 .songlist ul {
     width: 100%;
@@ -309,12 +311,38 @@ body {
 {
     list-style-type: decimal;
     display: flex;
-    padding: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
     font-size: 15px;
+    gap: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+.songlist ul li:hover
+{
+    background-color: rgb(110, 69, 69);
+    transform: scale(1.02);
 }
 
 .songlist ul li img 
 {
     width: 30px;
     height: 30px;
+}
+.songlist ul li .info 
+{
+    width: 130px;
+}
+
+.playnow 
+{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
 }
