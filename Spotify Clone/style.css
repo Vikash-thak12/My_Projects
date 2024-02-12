@@ -106,6 +106,8 @@ body {
     cursor: pointer;
     position: absolute;
     bottom: 30px;
+    transition: transform .1s ease-in-out;
+
 }
 
 .globe img {
@@ -119,6 +121,7 @@ body {
 
 .globe:hover {
     border: 2px solid white;
+    transform: scale(1.05);
 }
 
 
