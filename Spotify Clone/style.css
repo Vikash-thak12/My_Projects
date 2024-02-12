@@ -286,12 +286,13 @@ body {
 .playbar
 {
     position: fixed;
-    bottom: 24px;
+    bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(38, 33, 33);
     width: 72%;
+    height: 40px;
     padding: 5px;
     border-radius: 20px;
 }
@@ -364,4 +365,15 @@ body {
     align-items: center;
     gap: 10px;
     margin-left: 20px;
+}
+
+.seekbar
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 25px;
+    height: 4px;
+    width: 99%;
+    border: 1px solid white;
+    /* background-color: rgb(164, 138, 138); */
 }
