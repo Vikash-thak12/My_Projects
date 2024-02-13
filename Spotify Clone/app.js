@@ -33,14 +33,6 @@ async function main() {
             <img class="invert" src="play.svg" alt="">
         </div></li>`;
     }
-
-    //play the first song
-    var audio = new Audio(songs[0]);
-    // audio.play();
-
-    audio.addEventListener("loadeddata" , () => {
-        console.log(audio.duration, audio.currentSrc, audio.currentTime);
-    })
 }
 
 main()
