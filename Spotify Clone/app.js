@@ -33,6 +33,17 @@ async function main() {
             <img class="invert" src="play.svg" alt="">
         </div></li>`;
     }
+
+    Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e=> {
+        e.addEventListener("click", () => {
+            console.log(e.querySelector(".info").firstElementChild.innerHTML);
+            playmusic(e.querySelector(".info").firstElementChild.innerHTML);
+        })
+        
+
+    });
+
+
 }
 
 main()
