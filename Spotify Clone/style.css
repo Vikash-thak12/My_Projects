@@ -297,15 +297,6 @@ body {
     bottom: 85px;
 }
 
-/* .play:hover
-{
-    transform: scale(1);
-    bottom: 85px;
-} */
-
-/* .play:not(:hover) {
-    opacity: 0;
-}  */
 
 .playbar
 {
