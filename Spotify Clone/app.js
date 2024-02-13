@@ -19,7 +19,8 @@ async function getSongs() {
 
 const playmusic = (track) => {
     // let audio = new Audio("/songs/" + track);
-    audio.play();
+    currentSong.src = "/songs/" + track;
+    currentSong.play();
 }
 
 async function main() {
