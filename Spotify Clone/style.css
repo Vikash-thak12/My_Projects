@@ -397,8 +397,12 @@ body {
 .circle
 {
     /* border: 1px solid white; */
+    position: relative;
+    left: 0;
+    bottom: 5px;
     height: 14px;
     width: 14px;
     border-radius: 50%;
     background-color: rgb(67, 56, 56);
+    transition: left .5s;
 }
