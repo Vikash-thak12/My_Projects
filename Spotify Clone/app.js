@@ -24,6 +24,7 @@ const playmusic = (track) => {
     // let audio = new Audio("/songs/" + track);
     currentSong.src = "/songs/" + track;
     currentSong.play();
+    playbtn.src = "pause.svg";
 }
 
 async function main() {
@@ -50,7 +51,7 @@ async function main() {
         e.addEventListener("click", () => {
             console.log(e.querySelector(".info").firstElementChild.innerHTML);
             playmusic(e.querySelector(".info").firstElementChild.innerHTML.trim());
-            // currentSong.src = "pause.svg";
+           
         })
         
 
