@@ -317,12 +317,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .buttons img 
 {
-    width: 30px;
+    width: 32px;
     cursor: pointer;
 }
 
@@ -385,7 +385,7 @@ body {
 .seekbar
 {
     position: absolute;
-    bottom: 7px;
+    bottom: 5px;
     border-radius: 25px;
     height: 4px;
     width: 98%;

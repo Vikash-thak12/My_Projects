@@ -1,5 +1,8 @@
 console.log("Let's write JavaScript");
 var currentSong = new Audio();
+var playbtn = document.querySelector("#play");
+var previous = document.querySelector("#previous");
+var next = document.querySelector("#next");
 
 async function getSongs() {
     let a = await fetch("http://127.0.0.1:5500/songs/");
@@ -47,12 +50,23 @@ async function main() {
         e.addEventListener("click", () => {
             console.log(e.querySelector(".info").firstElementChild.innerHTML);
             playmusic(e.querySelector(".info").firstElementChild.innerHTML.trim());
+            // currentSong.src = "pause.svg";
         })
         
 
     });
 
     // Attach an event Listener to play the song, can previous it and can next the songs
+    playbtn.addEventListener("click", () => {
+        if(currentSong.paused) {
+            currentSong.play();
+            playbtn.src = "pause.svg"
+        } else {
+            currentSong.pause();
+            playbtn.src = "play.svg"
+        }
+    })
+
 
 }
 
