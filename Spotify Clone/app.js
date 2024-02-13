@@ -42,6 +42,7 @@ async function main() {
         </div></li>`;
     }
 
+    // Attach an event listener for each song 
     Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e=> {
         e.addEventListener("click", () => {
             console.log(e.querySelector(".info").firstElementChild.innerHTML);
@@ -51,6 +52,7 @@ async function main() {
 
     });
 
+    // Attach an event Listener to play the song, can previous it and can next the songs
 
 }
 
