@@ -304,7 +304,7 @@ body {
     bottom: 5px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgb(38, 33, 33);
     width: 72%;
     height: 50px;
@@ -406,3 +406,4 @@ body {
     background-color: rgb(67, 56, 56);
     transition: left .5s;
 }
+

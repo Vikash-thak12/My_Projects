@@ -25,6 +25,9 @@ const playmusic = (track) => {
     currentSong.src = "/songs/" + track;
     currentSong.play();
     playbtn.src = "pause.svg";
+
+    document.querySelector(".songinfo").innerHTML = track;
+    document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
 }
 
 async function main() {
