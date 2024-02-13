@@ -92,7 +92,9 @@ body {
 .footer a:hover 
 {
     color: white;
-    transform: scale(1.5    );
+    transform: scale(1.5);
+    /* text-decoration: underline; */
+    border-bottom: 2px solid white;
 }
 
 .globe {
