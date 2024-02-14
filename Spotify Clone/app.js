@@ -20,6 +20,8 @@ async function getSongs() {
     return songs;
 }
 
+
+
 const playmusic = (track) => {
     // let audio = new Audio("/songs/" + track);
     currentSong.src = "/songs/" + track;
@@ -29,6 +31,18 @@ const playmusic = (track) => {
     document.querySelector(".songinfo").innerHTML = track;
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
 }
+
+function secConvertor(seconds) {
+    var minutes = Math.floor(seconds / 60);
+    var remainingSeconds = Math.floor(seconds % 60);
+
+    // Add leading zeros if necessary
+    var minutesStr = minutes < 10 ? '0' + minutes : minutes;
+    var secondsStr = remainingSeconds < 10 ? '0' + remainingSeconds : remainingSeconds;
+
+    return minutesStr + ':' + secondsStr;
+}
+
 
 async function main() {
     //list of all the songs
@@ -74,6 +88,7 @@ async function main() {
     // Listener for updating the current time of the songs
     currentSong.addEventListener("timeupdate", () => {
         console.log(currentSong.currentTime, currentSong.duration);
+        document.querySelector(".songtime").innerHTML = `${secConvertor(currentSong.currentTime)}/${secConvertor(currentSong.duration)}`;
     })
 
 
