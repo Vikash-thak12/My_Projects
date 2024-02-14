@@ -4,6 +4,8 @@ var playbtn = document.querySelector("#play");
 var previous = document.querySelector("#previous");
 var next = document.querySelector("#next");
 
+
+//Function to get the songs from the api
 async function getSongs() {
     let a = await fetch("http://127.0.0.1:5500/songs/");
     let response = await a.text();
@@ -21,17 +23,20 @@ async function getSongs() {
 }
 
 
-
-const playmusic = (track) => {
+//Function for playing the songs
+const playmusic = (track, pause=false) => {
     // let audio = new Audio("/songs/" + track);
     currentSong.src = "/songs/" + track;
-    currentSong.play();
-    playbtn.src = "pause.svg";
-
-    document.querySelector(".songinfo").innerHTML = track;
+    if(!false) {
+        currentSong.play();
+        playbtn.src = "pause.svg";
+    }
+    document.querySelector(".songinfo").innerHTML = decodeURI(track);
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
 }
 
+
+//Functions for converting the seconds into proper fomrat like 00:00
 function secConvertor(seconds) {
     var minutes = Math.floor(seconds / 60);
     var remainingSeconds = Math.floor(seconds % 60);
@@ -44,10 +49,12 @@ function secConvertor(seconds) {
 }
 
 
+//Main function of the JS
 async function main() {
     //list of all the songs
     let songs = await getSongs();
-    console.log(songs);
+    playmusic(songs[0], true)
+    // console.log(songs)
 
     let songUL = document.querySelector(".songlist").getElementsByTagName("ul")[0]
     for(const song of songs) {

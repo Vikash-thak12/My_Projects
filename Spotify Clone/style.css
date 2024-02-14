@@ -314,10 +314,12 @@ body {
 
 .buttons
 {
+    max-width: 170px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    flex: 1; /* Flexible width for buttons and song time */
 }
 
 .buttons img 
@@ -406,4 +408,3 @@ body {
     background-color: rgb(67, 56, 56);
     transition: left .5s;
 }
-
