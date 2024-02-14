@@ -71,6 +71,11 @@ async function main() {
         }
     })
 
+    // Listener for updating the current time of the songs
+    currentSong.addEventListener("timeupdate", () => {
+        console.log(currentSong.currentTime, currentSong.duration);
+    })
+
 
 }
 
