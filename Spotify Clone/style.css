@@ -394,6 +394,7 @@ body {
     /* margin-top: 1px; */
     /* border: 1px solid white; */
     background-color: rgb(164, 138, 138);
+    cursor: pointer;
 }
 
 .circle

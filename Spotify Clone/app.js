@@ -96,6 +96,16 @@ async function main() {
     currentSong.addEventListener("timeupdate", () => {
         console.log(currentSong.currentTime, currentSong.duration);
         document.querySelector(".songtime").innerHTML = `${secConvertor(currentSong.currentTime)}/${secConvertor(currentSong.duration)}`;
+        //the circle will move according to the song %
+        document.querySelector(".circle").style.left = (currentSong.currentTime/currentSong.duration)*100 + "%";
+    })
+
+    //Adding eventlistener to the seekbar whenever the cursor will click on the sickbar the circle will be displayed there
+    document.querySelector(".seekbar").addEventListener("click", e=> {
+        let percent = ((e.offsetX/e.target.getBoundingClientRect().width) * 100);
+        console.log(e.offsetX, e.target.getBoundingClientRect().width)
+        document.querySelector(".circle").style.left = percent + "%";
+        currentSong.currentTime = ((currentSong.duration) * percent) / 100;
     })
 
 
