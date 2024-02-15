@@ -249,10 +249,8 @@ body {
 .card
 {
     width: 180px;
-    /* border: 2px solid red; */
     padding: 10px;
     border-radius: 10px;
-    /* background-color: #161616; */
     background-color: rgb(72, 46, 46);
     cursor: pointer;
     position: relative;
@@ -336,7 +334,6 @@ body {
     margin: 10px;
     overflow: auto;
     padding: 10px;
-    /* height: 344px; */
 }
 .songlist ul {
     width: 100%;
