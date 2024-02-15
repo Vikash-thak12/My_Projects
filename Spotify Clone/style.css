@@ -31,7 +31,6 @@ body {
 .home {
     padding: 1rem;
     margin: 5px;
-    /* border: 2px solid white; */
     border-radius: 20px;
 }
 
@@ -69,7 +68,6 @@ body {
     min-height: 70vh;
     margin: 5px;
     padding: 10px;
-    /* border: 2px solid white; */
     border-radius: 20px;
 }
 
@@ -93,7 +91,6 @@ body {
 {
     color: white;
     transform: scale(1.5);
-    /* text-decoration: underline; */
     border-bottom: 2px solid white;
 }
 
@@ -125,9 +122,6 @@ body {
     border: 2px solid white;
     transform: scale(1.05);
 }
-
-
-/* Right sidebar  */
 
 .header {
     margin: 5px;
