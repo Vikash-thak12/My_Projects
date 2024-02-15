@@ -391,15 +391,12 @@ body {
     border-radius: 25px;
     height: 4px;
     width: 98%;
-    /* margin-top: 1px; */
-    /* border: 1px solid white; */
     background-color: rgb(164, 138, 138);
     cursor: pointer;
 }
 
 .circle
 {
-    /* border: 1px solid white; */
     position: relative;
     left: 0;
     bottom: 5px;
