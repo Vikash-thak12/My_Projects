@@ -3,6 +3,7 @@ var currentSong = new Audio();
 var playbtn = document.querySelector("#play");
 var previous = document.querySelector("#previous");
 var next = document.querySelector("#next");
+let songs;
 
 
 //Function to get the songs from the api
@@ -52,7 +53,7 @@ function secConvertor(seconds) {
 //Main function of the JS
 async function main() {
     //list of all the songs
-    let songs = await getSongs();
+    songs = await getSongs();
     playmusic(songs[0], true)
     // console.log(songs)
 
@@ -120,7 +121,12 @@ async function main() {
 
     //Adding an eventlistener for the next button 
     document.querySelector("#next").addEventListener("click", () => {
-        console.log("Next Button clicked:")
+        console.log("Next Button clicked:");
+        let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
+        if((index+1) < songs.length) 
+        {
+            playmusic(songs[index+1]);
+        }
     })
 
 }
