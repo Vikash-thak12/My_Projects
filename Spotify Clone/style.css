@@ -17,7 +17,7 @@ body {
 
 .left {
     width: 24%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .right {
@@ -331,7 +331,7 @@ body {
     justify-content: space-around;
     background-color: rgb(38, 33, 33);
     width: 72%;
-    height: 50px;
+    min-height: 50px;
     padding: 5px;
     border-radius: 10px;
 }
@@ -442,17 +442,13 @@ body {
         background-color: black;
         transition: all .9s;
         z-index: 1;
-        width: 350px;
+        width: 390px;
+
     }
 
     .right
     {
         width: 100%;
-    }
-
-    .playbar
-    {
-        width: 95%;
     }
     .burger
     {
@@ -462,13 +458,43 @@ body {
     {
         min-height: 78vh;
     }
-    .songlist
+    .playbar 
     {
-        min-height: 50vh;
-        margin-top: 0;
+        width: calc(100% - 60px);
+        bottom: 50px;
     }
     .cross
     {
         display: block;
+    }
+
+    /* .footer
+    {
+        bottom: 100px;
+    } */
+    
+
+}
+
+@media (max-width: 435px) {
+
+    .playbar
+    {
+        position: fixed;
+        width: 90%;
+    }
+
+    .card 
+    {
+        width: 300px;
+    }
+
+    .right-header
+    {
+        display: none;
+    }
+
+    .btn{
+        display: none;
     }
 }
