@@ -150,6 +150,25 @@ body {
     margin-right: 10px;
 
 }
+
+.hamburgerContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.burger
+{
+    display: none;
+    
+}
+
+.burger img 
+{
+    width: 35px;
+    height: auto;
+}
 .btn 
 {
     padding: 5px;
@@ -419,5 +438,9 @@ body {
     .playbar
     {
         width: 95%;
+    }
+    .burger
+    {
+        display: block;
     }
 }
