@@ -262,6 +262,7 @@ body {
     padding: 16px;
 }
 .cardContainer {
+    margin-top: 5px;
     display: flex;
     align-items: center;
     justify-content: baseline;
@@ -335,7 +336,19 @@ body {
     padding: 5px;
     border-radius: 10px;
 }
+.songinfo
+{
+    /* border: 1px solid white; */
+    width: 400px;
 
+}
+
+.songtime
+{
+    /* border: 1px solid white; */
+    width: 300px;
+    text-align: end;
+}
 .buttons
 {
     max-width: 170px;
