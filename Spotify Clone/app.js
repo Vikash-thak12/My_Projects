@@ -108,6 +108,10 @@ async function main() {
         currentSong.currentTime = ((currentSong.duration) * percent) / 100;
     })
 
+    // Adding an eventlistener when the hamburger clicked then it will show the left block of the website
+    document.querySelector(".burger").addEventListener("click", ()=> {
+        document.querySelector(".left").style.left = "0";
+    })
 
 }
 

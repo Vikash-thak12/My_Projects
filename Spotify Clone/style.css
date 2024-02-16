@@ -65,7 +65,7 @@ body {
 
 .library {
     position: relative;
-    min-height: 70vh;
+    min-height: 74vh;
     margin: 5px;
     padding: 10px;
     border-radius: 20px;
@@ -345,8 +345,9 @@ body {
     align-items: center;
     justify-content: center;
     margin: 10px;
-    overflow: auto;
+    overflow-y: auto;
     padding: 10px;
+    max-height: 400px;
 }
 .songlist ul {
     width: 100%;
@@ -425,9 +426,10 @@ body {
     {
         position: absolute;
         left: -100%;
-        background-color: red;
+        background-color: black;
         transition: all .9s;
         z-index: 1;
+        width: 350px;
     }
 
     .right
@@ -442,5 +444,14 @@ body {
     .burger
     {
         display: block;
+    }
+    .library
+    {
+        min-height: 78vh;
+    }
+    .songlist
+    {
+        min-height: 50vh;
+        margin-top: 0;
     }
 }
