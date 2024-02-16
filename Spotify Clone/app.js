@@ -113,6 +113,11 @@ async function main() {
         document.querySelector(".left").style.left = "0";
     })
 
+    //Adding an eventlistener on the cross icon 
+    document.querySelector(".cross").addEventListener("click", () => {
+        document.querySelector(".left").style.left = "-100%";
+    })
+
 }
 
 main()
