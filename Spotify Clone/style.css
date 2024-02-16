@@ -476,17 +476,23 @@ body {
 
 }
 
-@media (max-width: 435px) {
+@media (max-width: 400px) {
 
     .playbar
     {
         position: fixed;
         width: 90%;
+        font-size: 15px;
+    }
+    .cardContainer
+    {
+        justify-content: center;
     }
 
     .card 
     {
-        width: 300px;
+        margin-top: 10px;
+        width: 290px;
     }
 
     .right-header
