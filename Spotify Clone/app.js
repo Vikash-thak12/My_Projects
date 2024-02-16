@@ -119,6 +119,15 @@ async function main() {
         document.querySelector(".left").style.left = "-100%";
     })
 
+     //Adding an eventlistener for the previous button 
+     document.querySelector("#previous").addEventListener("click", () => {
+        console.log("previous clicked:")
+        let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
+        if((index-1) >= 0) {
+            playmusic(songs[index-1])
+        }
+    })
+
     //Adding an eventlistener for the next button 
     document.querySelector("#next").addEventListener("click", () => {
         console.log("Next Button clicked:");
@@ -128,6 +137,8 @@ async function main() {
             playmusic(songs[index+1]);
         }
     })
+
+   
 
 }
 
