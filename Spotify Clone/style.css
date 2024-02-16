@@ -46,6 +46,19 @@ body {
     font-weight: bold;
 }
 
+.cross
+{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: none;
+}
+.cross img
+{
+    width: 35px;
+    height: auto;
+}
+
 .heading {
     display: flex;
     gap: 10px;
@@ -453,5 +466,9 @@ body {
     {
         min-height: 50vh;
         margin-top: 0;
+    }
+    .cross
+    {
+        display: block;
     }
 }
