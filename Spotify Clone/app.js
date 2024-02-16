@@ -118,6 +118,11 @@ async function main() {
         document.querySelector(".left").style.left = "-100%";
     })
 
+    //Adding an eventlistener for the next button 
+    document.querySelector("#next").addEventListener("click", () => {
+        console.log("Next Button clicked:")
+    })
+
 }
 
 main()
