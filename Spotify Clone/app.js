@@ -7,8 +7,8 @@ let songs;
 
 
 //Function to get the songs from the api
-async function getSongs() {
-    let a = await fetch("http://127.0.0.1:5500/songs/");
+async function getSongs(folder) {
+    let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
     let response = await a.text();
     let div = document.createElement("div");
     let val = div.innerHTML = response;
@@ -17,7 +17,7 @@ async function getSongs() {
     for (i = 0; i < as.length; i++) {
         const element = as[i];
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split("/songs/")[1])
+            songs.push(element.href.split(`/${folder}/`)[1])
         }
     }
     return songs;
@@ -27,7 +27,7 @@ async function getSongs() {
 //Function for playing the songs
 const playmusic = (track, pause=false) => {
     // let audio = new Audio("/songs/" + track);
-    currentSong.src = "/songs/" + track;
+    currentSong.src = `/${folder}/` + track;
     if(!false) {
         currentSong.play();
         playbtn.src = "pause.svg";
