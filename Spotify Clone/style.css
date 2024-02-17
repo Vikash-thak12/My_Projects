@@ -356,6 +356,10 @@ body {
     align-items: center;
     cursor: pointer;
 }
+.range input 
+{
+    cursor: pointer;
+}
 
 .songtime {
     text-align: end;
