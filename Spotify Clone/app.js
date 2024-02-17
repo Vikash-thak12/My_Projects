@@ -15,14 +15,31 @@ async function getSongs(folder) {
     let div = document.createElement("div");
     let val = div.innerHTML = response;
     let as = div.getElementsByTagName("a");
-    let songs = [];
+    songs = [];
     for (i = 0; i < as.length; i++) {
         const element = as[i];
         if (element.href.endsWith(".mp3")) {
             songs.push(element.href.split(`/${folder}/`)[1])
         }
     }
-    return songs;
+
+     // Show all the songs in the playlist
+     let songUL = document.querySelector(".songlist").getElementsByTagName("ul")[0]
+     // Below is the code when i clicked on the new card then the previous card will become empty and the songs of new card will appear 
+     songUL.innerHTML = ""
+     for(const song of songs) {
+         songUL.innerHTML = songUL.innerHTML + `<li>
+         <img class="invert" src="music.svg" alt="">
+         <div class="info">
+             <div> ${song.replaceAll("%20", " ")} </div>
+             <div>Vikash</div>
+         </div>
+         <div class="playnow">
+             <span>Play Now</span>
+             <img class="invert" src="play.svg" alt="">
+         </div></li>`;
+     }
+
 }
 
 
@@ -55,23 +72,9 @@ function secConvertor(seconds) {
 //Main function of the JS
 async function main() {
     //list of all the songs
-    songs = await getSongs("songs/Vikash");
+    await getSongs("songs/Vikash");
     playmusic(songs[0], true)
     // console.log(songs)
-
-    let songUL = document.querySelector(".songlist").getElementsByTagName("ul")[0]
-    for(const song of songs) {
-        songUL.innerHTML = songUL.innerHTML + `<li>
-        <img class="invert" src="music.svg" alt="">
-        <div class="info">
-            <div> ${song.replaceAll("%20", " ")} </div>
-            <div>Vikash</div>
-        </div>
-        <div class="playnow">
-            <span>Play Now</span>
-            <img class="invert" src="play.svg" alt="">
-        </div></li>`;
-    }
 
     // Attach an event listener for each song 
     Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e=> {
@@ -144,6 +147,17 @@ async function main() {
    document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
     console.log(e.target, e.target.value);
     currentSong.volume = parseInt(e.target.value)/100;
+   })
+
+
+   //creating a function to load a playlist whenever a card is clicked
+   Array.from(document.getElementsByClassName("card")).forEach(e=> {
+    console.log(e)
+    e.addEventListener("click", async item => {
+        console.log(item.currentTarget)
+        songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`);
+        
+    })
    })
 
 }
