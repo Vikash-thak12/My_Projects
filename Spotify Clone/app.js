@@ -4,10 +4,12 @@ var playbtn = document.querySelector("#play");
 var previous = document.querySelector("#previous");
 var next = document.querySelector("#next");
 let songs;
+let currFolder;
 
 
 //Function to get the songs from the api
 async function getSongs(folder) {
+    currFolder = folder;
     let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
     let response = await a.text();
     let div = document.createElement("div");
@@ -27,7 +29,7 @@ async function getSongs(folder) {
 //Function for playing the songs
 const playmusic = (track, pause=false) => {
     // let audio = new Audio("/songs/" + track);
-    currentSong.src = `/${folder}/` + track;
+    currentSong.src = `/${currFolder}/` + track;
     if(!false) {
         currentSong.play();
         playbtn.src = "pause.svg";
@@ -53,7 +55,7 @@ function secConvertor(seconds) {
 //Main function of the JS
 async function main() {
     //list of all the songs
-    songs = await getSongs();
+    songs = await getSongs("songs/Vikash");
     playmusic(songs[0], true)
     // console.log(songs)
 
