@@ -261,7 +261,7 @@ body {
     margin-top: 5px;
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    justify-content: space-around;
     padding: 5px;
     gap: 20px;
     flex-wrap: wrap;
@@ -271,7 +271,7 @@ body {
 }
 
 .card {
-    width: 180px;
+    width: 230px;
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(72, 46, 46);
