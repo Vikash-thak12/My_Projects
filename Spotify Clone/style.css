@@ -329,6 +329,13 @@ body {
     border-radius: 10px;
 }
 
+.abovebar
+{
+    display: flex;
+    align-items: center;
+
+}
+
 .songinfo {
     /* border: 1px solid white; */
     width: 400px;
@@ -339,8 +346,15 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 1px solid white;
-    width: 350px;
+    /* border: 1px solid white; */
+    width: auto;
+    margin-left: 100px;
+}
+.volume
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .songtime {
@@ -348,7 +362,7 @@ body {
 }
 
 .buttons {
-    max-width: 170px;
+    width: 270px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -490,6 +504,25 @@ body {
         position: fixed;
         width: 90%;
         font-size: 15px;
+    }
+    .abovebar
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .songinfo
+    {
+        text-align: center;
+    }
+    .timeVol
+    {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        gap: 0;
     }
 
     .cardContainer {
