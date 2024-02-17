@@ -46,15 +46,14 @@ body {
     font-weight: bold;
 }
 
-.cross
-{
+.cross {
     position: absolute;
     top: 20px;
     right: 25px;
     display: none;
 }
-.cross img
-{
+
+.cross img {
     width: 35px;
     height: auto;
 }
@@ -100,8 +99,8 @@ body {
     color: grey;
     transition: transform .2s ease-in-out;
 }
-.footer a:hover 
-{
+
+.footer a:hover {
     color: white;
     transform: scale(1.5);
     border-bottom: 2px solid white;
@@ -164,32 +163,30 @@ body {
 
 }
 
-.hamburgerContainer
-{
+.hamburgerContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.burger
-{
+
+.burger {
     display: none;
-    
+
 }
 
-.burger img 
-{
+.burger img {
     width: 35px;
     height: auto;
 }
-.btn 
-{
+
+.btn {
     padding: 5px;
     width: 320px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
 }
 
 
@@ -204,8 +201,8 @@ body {
     transition: transform .1s ease-in-out;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
 }
-.btn button:hover
-{
+
+.btn button:hover {
     color: white;
     transform: scale(1.1);
 }
@@ -220,8 +217,7 @@ body {
 
 }
 
-.log-btn
-{
+.log-btn {
     font-family: cu;
     background-color: transparent;
     border: none;
@@ -233,13 +229,13 @@ body {
     color: black;
     cursor: pointer;
 }
-.log-btn:hover
-{
+
+.log-btn:hover {
     font-weight: bold;
 }
 
 
-.sign-btn{
+.sign-btn {
     border-radius: 20px;
     padding: 10px 25px;
     font-weight: bold;
@@ -251,16 +247,16 @@ body {
     transition: transform .1s ease-in-out;
 
 }
-.sign-btn:hover 
-{
+
+.sign-btn:hover {
     transform: scale(1.05);
     color: white;
 }
 
-.spotifyPlaylists
-{
+.spotifyPlaylists {
     padding: 16px;
 }
+
 .cardContainer {
     margin-top: 5px;
     display: flex;
@@ -270,11 +266,11 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     overflow-y: scroll;
-    max-height: 69vh;   
+    max-height: 69vh;
 
 }
-.card
-{
+
+.card {
     width: 180px;
     padding: 10px;
     border-radius: 10px;
@@ -284,30 +280,28 @@ body {
     transition: transform .2s ease-in-out;
 }
 
-.card:hover
-{
+.card:hover {
     transform: scale(1.03);
     background-color: rgb(60, 54, 54);
 }
-.spotifyPlaylists .card img 
-{
+
+.spotifyPlaylists .card img {
     width: 100%;
     object-fit: contain;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
-.card > * {
-    padding-top:5px;
+.card>* {
+    padding-top: 5px;
 }
-.card p 
-{
+
+.card p {
     color: grey;
     font-size: .9rem;
     overflow: hidden;
 }
 
-.play 
-{
+.play {
     opacity: 0;
     position: absolute;
     bottom: 82px;
@@ -315,16 +309,14 @@ body {
     transition: transform .2s ease-in-out, bottom .2s ease-in-out;
 }
 
-.card:hover .play
-{
+.card:hover .play {
     transform: scale(1);
     opacity: 1;
     bottom: 85px;
 }
 
 
-.playbar
-{
+.playbar {
     position: fixed;
     bottom: 5px;
     display: flex;
@@ -336,37 +328,41 @@ body {
     padding: 5px;
     border-radius: 10px;
 }
-.songinfo
-{
+
+.songinfo {
     /* border: 1px solid white; */
     width: 400px;
 
 }
 
-.songtime
-{
-    /* border: 1px solid white; */
-    width: 300px;
+.timeVol {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid white;
+    width: 350px;
+}
+
+.songtime {
     text-align: end;
 }
-.buttons
-{
+
+.buttons {
     max-width: 170px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    flex: 1; /* Flexible width for buttons and song time */
+    flex: 1;
+    /* Flexible width for buttons and song time */
 }
 
-.buttons img 
-{
+.buttons img {
     width: 32px;
     cursor: pointer;
 }
 
-.songlist 
-{
+.songlist {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -375,13 +371,13 @@ body {
     padding: 10px;
     max-height: 400px;
 }
+
 .songlist ul {
     width: 100%;
     height: 300px;
 }
 
-.songlist ul li 
-{
+.songlist ul li {
     list-style-type: decimal;
     display: flex;
     align-items: center;
@@ -396,25 +392,23 @@ body {
     cursor: pointer;
     transition: transform .2s ease-in-out;
 }
-.songlist ul li:hover
-{
+
+.songlist ul li:hover {
     background-color: rgb(110, 69, 69);
     border: none;
     transform: scale(1.02);
 }
 
-.songlist ul li img 
-{
+.songlist ul li img {
     width: 30px;
     height: 30px;
 }
-.songlist ul li .info 
-{
+
+.songlist ul li .info {
     width: 130px;
 }
 
-.playnow 
-{
+.playnow {
     width: 33%;
     display: flex;
     align-items: center;
@@ -422,8 +416,7 @@ body {
     margin-left: 20px;
 }
 
-.seekbar
-{
+.seekbar {
     position: absolute;
     bottom: 5px;
     border-radius: 25px;
@@ -433,8 +426,7 @@ body {
     cursor: pointer;
 }
 
-.circle
-{
+.circle {
     position: relative;
     left: 0;
     bottom: 5px;
@@ -449,8 +441,7 @@ body {
 /* Working on Responsiveness of the website */
 
 @media (max-width: 1400px) {
-    .left
-    {
+    .left {
         position: absolute;
         left: -100%;
         background-color: black;
@@ -460,28 +451,28 @@ body {
 
     }
 
-    .right
-    {
+    .right {
         width: 100%;
     }
-    .cardContainer{
+
+    .cardContainer {
         justify-content: center;
     }
-    .burger
-    {
+
+    .burger {
         display: block;
     }
-    .library
-    {
+
+    .library {
         min-height: 78vh;
     }
-    .playbar 
-    {
+
+    .playbar {
         width: calc(100% - 60px);
         bottom: 50px;
     }
-    .cross
-    {
+
+    .cross {
         display: block;
     }
 
@@ -489,35 +480,32 @@ body {
     {
         bottom: 100px;
     } */
-    
+
 
 }
 
 @media (max-width: 400px) {
 
-    .playbar
-    {
+    .playbar {
         position: fixed;
         width: 90%;
         font-size: 15px;
     }
-    .cardContainer
-    {
+
+    .cardContainer {
         justify-content: center;
     }
 
-    .card 
-    {
+    .card {
         margin-top: 10px;
         width: 290px;
     }
 
-    .right-header
-    {
+    .right-header {
         display: none;
     }
 
-    .btn{
+    .btn {
         display: none;
     }
 }
