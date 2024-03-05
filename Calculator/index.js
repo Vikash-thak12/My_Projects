@@ -24,7 +24,10 @@ function calculate()
 {
    try
    {
-    display.value = eval(display.value);
+
+    var result = eval(display.value);
+    result = parseFloat(result.toFixed(3));
+    display.value = result;
    }
    catch(error)
    {
