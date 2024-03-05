@@ -11,7 +11,7 @@ function clearDisplay()
 }
 
 function removeLastDigit() {
-    var display = document.getElementById('display');
+    // var display = document.getElementById('display');
     var currentValue = display.value;
 
     // Check if there is anything to remove
