@@ -16,7 +16,7 @@
 .menu
 {
     display: block;
-    margin: 20px;
+    margin: 20px 10px 10px;
     cursor: pointer;
 }
 
@@ -26,12 +26,14 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 10px 0;
-    border: 1px solid black;
+    margin: 50px 0;
     padding: 10px 15px;
     border-radius: 50px;
     cursor: pointer;
     background-color: #e6eaf1;
+}
+.chat img{
+    width: 15px;
 }
 .recent
 {
@@ -45,5 +47,31 @@
     align-items: center;
     gap: 10px;
     margin: 20px 0 50px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 40px;
     
+}
+.recent-history:hover
+{
+    background-color: #e2e6eb;
+}
+.bottom
+{
+    margin-bottom: 20px;
+}
+.bottom-item
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.bottom-item:hover
+{
+    background-color: #e2e6eb;
 }
