@@ -1,0 +1,49 @@
+.Sidebar
+{
+    padding: 20px;
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+}
+
+.Sidebar img 
+{
+    width: 20px;
+}
+
+.menu
+{
+    display: block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.chat
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #e6eaf1;
+}
+.recent
+{
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.recent-history
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 50px;
+    
+}
