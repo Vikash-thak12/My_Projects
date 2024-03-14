@@ -17,7 +17,7 @@ const Main = () => {
         </div>
         <div className="cards">
           <div className="card">
-            <p> a debate: how should you store bread?</p>
+            <p>A debate: how should you store bread?</p>
             <img src={assets.bulb_icon} alt="" />
           </div>
           <div className="card">

@@ -21,3 +21,52 @@
     border-radius: 50%;
     width: 50px;
 }
+.middle 
+{
+    max-width: 900px;
+    margin: auto;
+}
+
+.text 
+{
+    margin: 20px 0;
+    color: #c4c7c5;
+}
+.text h2
+{
+    font-size: 3.5rem;
+}
+.text h2 span
+{
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cards 
+{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+   /* padding: 20px; */
+   gap: 10px;
+}
+.card
+{
+    position: relative;
+    border: 1px solid black;
+    padding: 15px 10px;
+    height: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card img{
+    width: 40px;
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+}
+.card:hover
+{
+    background-color: #dfe4ea;
+}
