@@ -91,7 +91,7 @@ footer {
 }
 
 footer img {
-    width: 30px;
+    width: 50px;
 }
 
 .main-bottom input {
@@ -117,7 +117,7 @@ footer img {
 }
 
 .main-bottom div img{
-    /* padding: 5px; */
+    padding: 10px;
     border-radius: 50%;
 }
 .main-bottom div img:hover
