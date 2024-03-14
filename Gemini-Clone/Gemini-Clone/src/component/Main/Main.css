@@ -86,14 +86,42 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: #f0f4f9;
+    border-radius: 30px;
+    margin-bottom: 40px;
 }
 
 footer img {
     width: 30px;
 }
 
-.main input
-{
+.main-bottom input {
     flex: 1;
+    border: none;
+    height: 100%;
+    padding: 10px;
+    outline: none;
     background: transparent;
+    appearance: none;
+    font-size: 18px;
 }
+
+.main-bottom div {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* margin-right: 20px; */
+}
+
+.main-bottom div img{
+    /* padding: 5px; */
+    border-radius: 50%;
+}
+.main-bottom div img:hover
+{
+    background-color: #e2e6eb;
+}
+
