@@ -1,13 +1,12 @@
-.main-container
-{
+.main-container {
     flex: 1;
     min-height: 100vh;
     padding-bottom: 15vh;
     position: relative;
-    
+
 }
-.header
-{
+
+.header {
     /* width: 100%; */
     display: flex;
     align-items: center;
@@ -17,41 +16,39 @@
     color: #585858;
 }
 
-.header img{
+.header img {
     border-radius: 50%;
     width: 50px;
 }
-.middle 
-{
+
+.middle {
     max-width: 900px;
     margin: auto;
 }
 
-.text 
-{
+.text {
     margin: 20px 0;
     color: #c4c7c5;
 }
-.text h2
-{
+
+.text h2 {
     font-size: 3.5rem;
 }
-.text h2 span
-{
+
+.text h2 span {
     background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.cards 
-{
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
-   /* padding: 20px; */
-   gap: 10px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    /* padding: 20px; */
+    gap: 10px;
 }
-.card
-{
+
+.card {
     position: relative;
     border: 1px solid black;
     padding: 15px 10px;
@@ -60,13 +57,43 @@
     cursor: pointer;
 }
 
-.card img{
+.card img {
     width: 40px;
     position: absolute;
-    bottom:10px;
+    bottom: 10px;
     right: 10px;
 }
-.card:hover
-{
+
+.card:hover {
     background-color: #dfe4ea;
+}
+
+
+footer {
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    /* padding: 0 10px; */
+
+}
+
+.main-bottom {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+}
+
+footer img {
+    width: 30px;
+}
+
+.main input
+{
+    flex: 1;
+    background: transparent;
 }

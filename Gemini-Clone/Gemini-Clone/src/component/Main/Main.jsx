@@ -33,7 +33,21 @@ const Main = () => {
             <img src={assets.compass_icon} alt="" />
           </div>
         </div>
+
+        <footer>
+          <div className="main-bottom">
+            <input type="text" placeholder="Type here..." />
+            <div>
+              <img src={assets.gallery_icon} alt="" />
+              <img src={assets.mic_icon} alt="" />
+              <img src={assets.send_icon} alt="" />
+            </div>
+          </div>
+        </footer>
+
       </div>
+
+
     </div>
   );
 };
