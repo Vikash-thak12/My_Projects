@@ -8,7 +8,7 @@ const ContextProvider = (props) => {
     const [input, setInput] = useState("");
     const [recentPrompts, setRecentPrompts] = useState("");
     const [prevPrompts, setPrevPrompts] = useState([]);
-    const [showresult, setShowResult] = useState(false);
+    const [showResult, setShowResult] = useState(false);
     const [loading, setLoading] = useState(false);
     const [resultData, setResultData] = useState("");
 
@@ -19,7 +19,16 @@ const ContextProvider = (props) => {
     // onSent("What is Software Engineering")
 
     const contextvalue = {
-
+        prevPrompts,
+        setPrevPrompts,
+        onSent,
+        setRecentPrompts,
+        recentPrompts,
+        showResult,
+        loading,
+        resultData,
+        input,
+        setInput
     }
 
     return (
