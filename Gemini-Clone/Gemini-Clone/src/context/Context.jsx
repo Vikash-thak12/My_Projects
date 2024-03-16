@@ -23,6 +23,12 @@ const ContextProvider = (props) => {
         }, 35*index);
     }
 
+    //Function for the new chat in the webpage
+    const newChat = () => {
+        setLoading(false)
+        setShowResult(false)
+    }
+
 
     // This is the function that will used to submit the input values
     const onSent = async (prompt) => {
@@ -77,7 +83,8 @@ const ContextProvider = (props) => {
         loading,
         resultData,
         input,
-        setInput
+        setInput,
+        newChat
     }
 
     return (
