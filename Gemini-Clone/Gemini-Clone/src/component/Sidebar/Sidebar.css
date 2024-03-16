@@ -39,6 +39,7 @@
 {
     margin-top: 40px 0;
     padding: 10px;
+    animation: fadeIn 1.5s;
 }
 
 .Recent-txt
@@ -79,3 +80,9 @@
 {
     background-color: #e2e6eb;
 }   
+
+@media (max-width: 600px) {
+    .Sidebar {
+        display: none;
+    }
+}
