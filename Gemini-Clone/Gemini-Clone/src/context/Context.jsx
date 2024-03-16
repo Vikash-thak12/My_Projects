@@ -30,9 +30,21 @@ const ContextProvider = (props) => {
         setResultData("")
         setLoading(true)    
         setShowResult(true)
-        setRecentPrompts(input)
-        setPrevPrompts(prev=>[...prev,input ])  // For storing the recect prompts in the sidebar
-        const response = await runChat(input);
+        let response;
+        if(prompt !== undefined) {
+            response = await runChat(prompt)
+            setRecentPrompts(prompt)
+        } else 
+        {
+            setPrevPrompts(prev=>[...prev,input])
+            setRecentPrompts(input)
+            response = await runChat(input)
+        }
+
+
+        // setRecentPrompts(input)
+        // setPrevPrompts(prev=>[...prev,input ])  // For storing the recect prompts in the sidebar
+        // const response = await runChat(input);
         let responseArray = response.split("**");
         let newResponse = "";
         for(let i = 0; i<responseArray.length; i++) {

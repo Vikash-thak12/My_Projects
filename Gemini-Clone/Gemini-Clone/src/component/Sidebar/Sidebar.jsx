@@ -8,6 +8,11 @@ const Sidebar = () => {
   const [extended, setExtended] = useState(false);
   const { onSent, prevPrompts, setRecentPrompts } = useContext(Context);
 
+  const loadPromt = async (prompt) => {
+    setRecentPrompts(prompt)
+    await onSent(prompt)
+  }
+
   return (
     <div className="Sidebar">
       <div className="top">
@@ -27,7 +32,7 @@ const Sidebar = () => {
             {/* This below code is used to store all the prompts in the prevPrompts Array */}
             {prevPrompts.map((item, index) => {
               return (
-                <div className="recent-history">
+                <div onClick={() => loadPromt(item)} className="recent-history">
                   <img src={assets.message_icon} />
                   <p>{item.slice(0, 20)}...</p>
                 </div>
