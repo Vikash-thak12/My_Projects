@@ -46,8 +46,9 @@ const Main = () => {
               <img src={assets.user_icon} alt="" />
               <p>{recentPrompts}</p>
             </div>
+
             <div className="result-data">
-              <img src={assets.gemini_icon} alt="" />
+              {loading?<img className='Rotate' src={assets.gemini_icon} alt="" />:<img src={assets.gemini_icon} alt="" />}
               {loading?
                 <div className="loader">
                   <hr />
@@ -62,12 +63,12 @@ const Main = () => {
 
         <footer>
           <div className="main-bottom">
-            <input onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => {if(e.key == 'Enter') {onSent()}}} value={input} type="text" placeholder="Enter the Prompts..." />
+            <input onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter') { onSent() } }} value={input} type="text" placeholder="Enter the Prompts..." />
             <div>
               <img src={assets.gallery_icon} alt="" />
               <img src={assets.mic_icon} alt="" />
-              {input?<img onClick={() => onSent()} src={assets.send_icon} alt="" />:null}
-              
+              {input ? <img onClick={() => onSent()} src={assets.send_icon} alt="" /> : null}
+
             </div>
           </div>
         </footer>
