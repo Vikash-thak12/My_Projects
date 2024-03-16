@@ -1,47 +1,57 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Sidebar.css'
 import { assets } from '../../assets/assets';
+import { Context } from '../../context/Context';
 
 const Sidebar = () => {
 
   const [extended, setExtended] = useState(false);
+  const { onSent, prevPrompts, setRecentPrompts } = useContext(Context);
 
   return (
     <div className="Sidebar">
       <div className="top">
 
 
-        <img onClick={() => setExtended(prev=>!prev)} className='menu' src={assets.menu_icon} />
+        <img onClick={() => setExtended(prev => !prev)} className='menu' src={assets.menu_icon} />
         <div className="chat">
           <img src={assets.plus_icon} />
-          {extended?<p>New Chat</p>:null}
+          {extended ? <p>New Chat</p> : null}
         </div>
 
 
-        {extended? 
-        <div className="recent">
-          <p>Recent</p>
-          <div className="recent-history">
-            <img src={assets.message_icon} />
-            <p>Learn about React...</p>
+        {extended ?
+          <div className="recent">
+            <p className='Recent-txt'>Recent</p>
+
+            {/* This below code is used to store all the prompts in the prevPrompts Array */}
+            {prevPrompts.map((item, index) => {
+              return (
+                <div className="recent-history">
+                  <img src={assets.message_icon} />
+                  <p>{item.slice(0, 20)}...</p>
+                </div>
+              )
+            })}
+
+
           </div>
-        </div> 
-        :null}
-       
+          : null}
+
 
       </div>
       <div className="bottom">
         <div className="bottom-item">
           <img src={assets.question_icon} />
-          {extended?<p>Help</p>:null}
+          {extended ? <p>Help</p> : null}
         </div>
         <div className="bottom-item">
           <img src={assets.history_icon} />
-          {extended?<p>Activity</p>:null}
+          {extended ? <p>Activity</p> : null}
         </div>
         <div className="bottom-item">
           <img src={assets.setting_icon} />
-          {extended?<p>Setting</p>:null}
+          {extended ? <p>Setting</p> : null}
         </div>
       </div>
     </div>

@@ -37,8 +37,13 @@
 }
 .recent
 {
-    margin-top: 40px;
+    margin-top: 40px 0;
     padding: 10px;
+}
+
+.Recent-txt
+{
+    margin-bottom: 20px;
 }
 
 .recent-history
@@ -46,7 +51,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 20px 0 50px;
     padding: 10px;
     cursor: pointer;
     border-radius: 40px;
@@ -74,4 +78,4 @@
 .bottom-item:hover
 {
     background-color: #e2e6eb;
-}
+}   
