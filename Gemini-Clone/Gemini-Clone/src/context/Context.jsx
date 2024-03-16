@@ -3,6 +3,8 @@ import runChat from "../config/gemini";
 
 export const Context = createContext();
 
+
+// This is the main function under which all the activies are happening...
 const ContextProvider = (props) => {
 
     const [input, setInput] = useState("");
@@ -14,11 +16,15 @@ const ContextProvider = (props) => {
 
 
 
+    //Function for the typing effect in the webpage like chatgpt does
     const deplayPara = (index,nextword) => {
         setTimeout(() => {
             setResultData(prev=>prev+nextword)
         }, 35*index);
     }
+
+
+    // This is the function that will used to submit the input values
     const onSent = async (prompt) => {
 
         setResultData("")
@@ -47,8 +53,6 @@ const ContextProvider = (props) => {
         setLoading(false)
         setInput("")
     }
-
-    // onSent("What is Software Engineering")
 
     const contextvalue = {
         prevPrompts,
