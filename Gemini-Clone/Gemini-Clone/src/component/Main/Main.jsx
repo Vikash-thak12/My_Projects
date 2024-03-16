@@ -62,7 +62,7 @@ const Main = () => {
 
         <footer>
           <div className="main-bottom">
-            <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder="Enter the Prompts..." />
+            <input onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => {if(e.key == 'Enter') {onSent()}}} value={input} type="text" placeholder="Enter the Prompts..." />
             <div>
               <img src={assets.gallery_icon} alt="" />
               <img src={assets.mic_icon} alt="" />
