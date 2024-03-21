@@ -13,6 +13,21 @@ const Sidebar = () => {
             </div>
             <img src={assets.chat} alt="" />
         </div>
+
+        <div className="bottom">
+            <div className="first">
+                <img src="" alt="" />
+                <p>Home</p>
+            </div>
+            <div className="first">
+                <img src="" alt="" />
+                <p>Saved</p>
+            </div>
+            <div className="first">
+                <img src="" alt="" />
+                <p>Upgrade to Pro</p>
+            </div>
+        </div>
       </div>
     </>
   );
