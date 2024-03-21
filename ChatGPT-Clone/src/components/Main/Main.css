@@ -1,0 +1,57 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.content
+{
+    width: 100%;
+    max-width: 800px;
+    height: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+    border: 1px solid white;
+}
+
+.sender
+{
+    width: 100%;
+    border: 1px solid white;
+    position: relative;
+    top: 90%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    /* background-color: gray;
+    border: none; */
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.sender input
+{
+    flex: 1;
+    height: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+}
+
+.sender img{
+    border: 1px solid black;
+    width: 40px;
+    padding: 5px;
+    cursor: pointer;
+}

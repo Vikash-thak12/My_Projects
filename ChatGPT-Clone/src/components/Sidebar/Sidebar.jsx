@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets';
 const Sidebar = () => {
   return (
     <>
-      <div className="main">
+      <div className="sidebar">
 
         {/* upper part of the sidebar */}
         <div className="upper">
