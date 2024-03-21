@@ -7,10 +7,12 @@
 
 .main
 {
-    width: 250px;
+    max-width: 250px;
     background-color: #171717;
     min-height: 100vh;
     padding: 0 10px;
+    position: relative;
+    border-right: 2px solid green;
 }
 
 .upper 
@@ -19,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 10px;
+    padding: 10px;
     position: sticky;
     top: 20px;
     cursor: pointer;
@@ -31,7 +33,7 @@
 }
 .upper:hover
 {
-    background-color: #2e2c2c;
+    background-color: #2a2727;
 }
 .left
 {
@@ -43,4 +45,33 @@
 
 .left img{
     width: 25px;
+}
+
+.bottom
+{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-top: 1px solid white;
+}
+
+.bottom .first
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.bottom .first:hover
+{
+    background-color: #2a2727;
 }

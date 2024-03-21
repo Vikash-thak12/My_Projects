@@ -16,15 +16,15 @@ const Sidebar = () => {
 
         <div className="bottom">
             <div className="first">
-                <img src="" alt="" />
+                <img src={assets.home} />
                 <p>Home</p>
             </div>
             <div className="first">
-                <img src="" alt="" />
+                <img src={assets.bookmark} />
                 <p>Saved</p>
             </div>
             <div className="first">
-                <img src="" alt="" />
+                <img src={assets.rocket} />
                 <p>Upgrade to Pro</p>
             </div>
         </div>
