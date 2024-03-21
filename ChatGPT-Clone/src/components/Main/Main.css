@@ -25,15 +25,16 @@
 
 .sender
 {
-    width: 100%;
-    border: 1px solid white;
-    position: relative;
-    top: 90%;
+    width: 96%;
+    /* border: 1px solid white; */
+    position: absolute;
+    bottom: -3%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     padding: 5px;
     display: flex;
     align-items: center;
-    /* background-color: gray;
-    border: none; */
+    background: rgba(28, 30, 58, 1);
     gap: 10px;
     border-radius: 10px;
 }
@@ -47,11 +48,61 @@
     border: none;
     background: transparent;
     font-size: 1.2rem;
+    color: white;
 }
 
 .sender img{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 40px;
     padding: 5px;
     cursor: pointer;
+}
+
+.chat
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* border: 1px solid white; */
+    padding: 10px;
+    gap: 10px;
+    max-height: 82vh;
+    overflow-y: scroll;
+    text-align: justify;
+}
+
+.chat img 
+{
+    width: 40px;
+    border-radius: 50%;
+    mix-blend-mode: hard-light;
+}
+
+.bot
+{
+    background: rgba(28, 30, 58, 1);
+    width: fit-content;
+    border-radius: 10px;
+}
+
+
+
+.secondchat, .firstchat
+{
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+::-webkit-scrollbar
+{width: 10px;}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(69, 85, 99, 0.267);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(137, 121, 121, 0.218);
+    border-radius: 15px;
 }
