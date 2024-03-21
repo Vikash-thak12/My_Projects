@@ -47,6 +47,47 @@
     width: 25px;
 }
 
+.middle
+{
+    color: white;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.middle img{
+    width: 20px;
+}
+
+.middle .mid-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 10px;
+    border: 1px solid white;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(170, 27, 170);
+}
+
+.middle .mid-2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.middle .mid-2:hover
+{
+    background-color: #474141;
+}
+
 .bottom
 {
     color: white;
