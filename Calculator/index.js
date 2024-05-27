@@ -22,6 +22,7 @@ function removeLastDigit() {
   }
 function calculate()
 {
+    // for error handling 
    try
    {
 
